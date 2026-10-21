@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- La app habla con el servidor de la cátedra por HTTPS. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Avisos de la cátedra y vencimientos de tareas (Android 13+ lo pide
+         en runtime; la app lo pide sólo cuando el alumno las activa). -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:label="Kitoru"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Kitoru">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Kitoru"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.Kitoru">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

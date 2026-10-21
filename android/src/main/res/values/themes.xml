@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema base de la app. El tema real (colores, tipografía) lo define
+         Compose en `kitoru.ui.KitoruTheme`; éste sólo evita el parpadeo
+         blanco al arrancar. -->
+    <style name="Theme.Kitoru" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+</resources>
